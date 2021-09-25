@@ -10,6 +10,7 @@ val typesafeConfigVersion = "1.4.1"
 val apacheCommonIOVersion = "2.11.0"
 val scalacticVersion = "3.2.9"
 val cloudSimPlusVersion = "6.4.3"
+val scalaTestVersion = "3.0.8"
 
 resolvers += Resolver.jcenterRepo
 
@@ -23,5 +24,6 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % scalacticVersion % Test,
   "org.scalatest" %% "scalatest-featurespec" % scalacticVersion % Test,
   "com.typesafe" % "config" % typesafeConfigVersion,
-  "org.cloudsimplus" % "cloudsim-plus" % cloudSimPlusVersion
+  "org.cloudsimplus" % "cloudsim-plus" % cloudSimPlusVersion,
+  "org.scalatest" %% "scalatest" % scalaTestVersion % "test"
 )
