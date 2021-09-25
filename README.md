@@ -87,6 +87,11 @@ I made this observation when logs displayed “CloudletSchedulerSpaceShared: Clo
 When using the UtilizationModelFull, one VM is totally dedicated to a Cloudlet, resulting in more VM as the number of Cloudlets grows. When the availability falls short of the criteria, the above log is generated. In this case, the cloudlet will wait till the resource is freed. For efficient resource utilization across cloudlets.
 the UtilizationRatio for UtilizationModelDynamic can be written as (1 / number of cloudlets)
 
+The tabular column1 shows SpaceShared
+
+The tabular column2 shows TimeShared
+
+
                                                        SIMULATION RESULTS
 
     Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
@@ -188,7 +193,7 @@ The different policy in DataCenterBroker are:
                                         SIMULATION RESULTS
 
     Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-      ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        2| 0|        2|       1000|          1|        0|         2|       2|          2.110|    21.100
        6|SUCCESS| 2|   0|        2| 0|        2|       1000|          1|        0|         2|       2|          2.110|    21.100
