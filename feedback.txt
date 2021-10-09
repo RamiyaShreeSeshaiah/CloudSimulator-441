@@ -12,7 +12,7 @@ Grading Criteria:
  - only some basic cloud simulation examples from the cloudsim repo are given and nothing else is done:
     * relatively basic simulation: -0.5% (your Simulation.scala has nothing in it).
  - having less than five unit and/or integration scalatests:
-    * test present, but test unable to run: -3%
+    * test present, but test unable to run (FIXED): -1.5%
  - missing comments and explanations from the simulation program:
     * comments present: -0%
  - logging is not used in the simulation programs:
@@ -26,17 +26,8 @@ Grading Criteria:
  - no instructions in README.md on how to install and run your simulator:
     * instructions present: -0%
  - the program crashes without completing the core functionality:
-    * program unable to run (please see comments): -6%
+    * program unable to run (please see comments) (FIXED): -2 (for initial mistake)
  - the documentation exists but it is insufficient to understand your cloud simulation design and models and how you assembled and deployed all components of the cloud:
     * documentation exists: -0%
-Total grade: 0%
-Comments: Whenever I do sbt run, and select a simulation, I get an error like this:
-[info] running Simulations.Simulation1
-[error] (run-main-4) java.lang.ClassNotFoundException: Simulations.Simulation1
-[error] java.lang.ClassNotFoundException: Simulations.Simulation1
-[error]         at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:440)
-[error] stack trace is suppressed; run 'last Compile / bgRun' for the full output
-[error] Nonzero exit code: 1
-[error] (Compile / run) Nonzero exit code: 1
-
-I even re-cloned the repo. Maybe come in during office hours to discuss this
+Total grade: 4%
+Comments: Make sure your submission works before. Do a clean clone and compile and run. 
