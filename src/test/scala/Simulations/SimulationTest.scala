@@ -15,6 +15,7 @@ class SimulationTest extends AnyFlatSpec with Matchers {
   val SIM1 = "simulation2config";
   
   val conf: Config = ConfigFactory.load(SIM + ".conf")
+  val conf1: Config = ConfigFactory.load(SIM1 + ".conf")
 
   behavior of "configuration parameters module"
 
@@ -34,14 +35,14 @@ class SimulationTest extends AnyFlatSpec with Matchers {
     conf.getInt(SIM + ".vm.bw") shouldBe 1000000
   }
 
-  it should "obtain the VM capacity" in {
-    conf.getInt(SIM1 + ".vm.mips") shouldBe 5000
+  it should "obtain the VM capacity 1" in {
+    conf1.getInt(SIM1 + ".vm.mips") shouldBe 5000
   }
-  it should "obtain the VM Ram" in {
-    conf.getInt(SIM1 + ".vm.ram") shouldBe 512
+  it should "obtain the VM Ram 1" in {
+    conf1.getInt(SIM1 + ".vm.ram") shouldBe 512
   }
-  
-  it should "obtain the VM Bandwidth" in {
-    conf.getInt(SIM1 + ".vm.bw") shouldBe 1000
+
+  it should "obtain the VM Bandwidth 1" in {
+    conf1.getInt(SIM1 + ".vm.bw") shouldBe 1000
   }
 }
