@@ -1,5 +1,3 @@
-package simulations
-
 import java.util
 import com.typesafe.config.{Config, ConfigFactory, ConfigList}
 import org.cloudbus.cloudsim.allocationpolicies.{VmAllocationPolicy, VmAllocationPolicyBestFit, VmAllocationPolicyFirstFit, VmAllocationPolicyRoundRobin, VmAllocationPolicySimple}
